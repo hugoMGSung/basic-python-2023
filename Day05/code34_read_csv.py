@@ -8,7 +8,7 @@ fullPath = dirName + fileName
 
 file = open(fullPath, 'r', encoding='utf-8')
 reader = csv.reader(file, delimiter=',')
-next(reader)
+next(reader)  # 제목줄은 데이터x 첫줄 패스
 
 for line in reader:
     print(line)
