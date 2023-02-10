@@ -11,7 +11,8 @@ class MyApp(QWidget):
         self.initUI()
 
     def initUI(self):
-        pixmap = QPixmap('./Day10/cat.png')
+        # 이미지 사이즈 강제 변경 .scaledToWidth(w)
+        pixmap = QPixmap('./Day10/cat.png').scaledToWidth(800)
 
         lblImage = QLabel(self)
         lblImage.setPixmap(pixmap)
@@ -25,10 +26,12 @@ class MyApp(QWidget):
         self.setLayout(vbox)
 
         # 필수설정
+        self.setWindowIcon(QIcon('./Day09/iot.png'))
         self.setWindowTitle('이미지 위젯')
         # self.setGeometry(300, 300, 300, 300)        
-        self.showFullScreen() # self.show() 
-        # self.setCenter()
+        # self.showFullScreen() # self.show() 
+        self.show()
+        self.setCenter()
     
     # 화면 중심 셋팅
     def setCenter(self):
