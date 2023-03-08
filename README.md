@@ -66,7 +66,10 @@ print(f'파이는 {pi:10.3f}입니다.') # 파이는       3.142입니다.
 2. 파이썬 응용
     - 주소록 프로그램 [소스](https://github.com/hugoMGSung/studyPython2023/blob/main/Project/address_app.py)
 
+<!--
 ![실행화면](https://raw.githubusercontent.com/hugoMGSung/studyPython2023/main/Images/address_app.png)
+-->
+<img src="https://raw.githubusercontent.com/hugoMGSung/studyPython2023/main/Images/address_app.png" width="780">
 
 실행화면
     
